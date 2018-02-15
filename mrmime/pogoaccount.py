@@ -898,6 +898,7 @@ class POGOAccount(object):
             time.sleep(random.uniform(.2, .3))
 
         # Fetch news
+        self.log_debug("Login Flow: Fetching News...")
         self.perform_request(lambda req: req.fetch_all_news())
         time.sleep(random.uniform(.45, .7))
 
